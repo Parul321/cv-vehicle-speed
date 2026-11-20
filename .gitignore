@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.mp4
+!assets/*.gif
+res_*
+runs/
+yolov8n-seg.pt
+*.pt
+compare_results.*
+compare_plot.png
