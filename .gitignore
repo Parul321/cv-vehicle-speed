@@ -2,7 +2,7 @@
 __pycache__/
 *.mp4
 !assets/*.gif
-res_*
+/res_*
 runs/
 yolov8n-seg.pt
 *.pt
