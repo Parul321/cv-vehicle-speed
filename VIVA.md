@@ -14,3 +14,4 @@
 13. **Validation?** Known-speed passes -> MAE, bias, RMSE; plus cross-method agreement. Be honest: stock clip had no ground truth.
 14. **Why no training?** Pretrained YOLO and RAFT already work on road video; contribution is the metric pipeline. Optional: linear speed correction fit on known passes.
 15. **Limitations / future work?** Fixed camera, planar road, manual calibration -> auto calibration from lane markings or vanishing points, fine-tune on traffic data, GPU real-time.
+16. **How did you check the geometry and formula without real ground truth?** Synthetic scene: a flat vehicle moves at a known speed through a known homography. With the exact flow field our code recovers the speed with 0.00 km/h error. With Farneback it underestimates slightly up to 50 km/h and fails at higher speeds in that setup. A 10% error in the entered road length gives exactly a 10% speed error.
